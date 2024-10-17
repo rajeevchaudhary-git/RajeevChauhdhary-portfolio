@@ -98,7 +98,7 @@ function Aboutme() {
                     className="btn btn_effect home-banner-btn orange-btn mt-50"
                     href="resume.html"
                   >
-                    <span className="position-relative z-1">Download My CV</span>
+                    <span className="position-relative z-1"><a style={{color:"white"}} href="Rajeevchaudhary.pdf" download >Download My CV</a></span>
                   </a>
                 </div>
               </div>
