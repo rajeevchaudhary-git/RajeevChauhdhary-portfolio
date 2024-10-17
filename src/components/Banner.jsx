@@ -29,7 +29,7 @@ function Banner() {
                   I’m a Full-Stack Web Developer with expertise in building responsive, scalable web applications using technologies like React, Node.js, Express,php,codeIgnter,Mysql and MongoDB. I focus on creating seamless user experiences and efficient back-end solutions, integrating third-party APIs, and delivering high-performance, modern web applications
                   </p>
                   <a className="btn_effect btn home-banner-btn orange-btn mt-50" href="#contact">
-                    <span className="z-1 position-relative">Hire Me For a Project</span>
+                    <span className="z-1 position-relative"><a style={{color:"white"}} href="Rajeevchaudhary.pdf" download >Download My CV</a></span>
                   </a>
                   <div className="banner-particle-one-container">
                     <img
