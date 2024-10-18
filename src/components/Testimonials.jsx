@@ -53,7 +53,7 @@ function Testimonials() {
                   <div className="item">
                     <div className="testimonial-card">
                       <div className="bio d-flex align-items-center">
-                        <img className="bio-img" src="img/img/testimonialOne.png" alt="testimonial-image" />
+                        <img className="bio-img" src="img/testimonialOne.png" alt="testimonial-image" />
                         <div>
                           <h3 className="h3 fw-500 line-height-3 black-color">Rajesh yadav</h3>
                           <p className="p fw-400 line-height-7 secondary-black">Founder, Web services</p>
