@@ -49,7 +49,7 @@ function Testimonials() {
                     </div>
                   </div>
                   
-                  {/* Slide 2 */}
+                  {/* Slide 2 */ }
                   <div className="item">
                     <div className="testimonial-card">
                       <div className="bio d-flex align-items-center">
