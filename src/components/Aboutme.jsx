@@ -90,13 +90,15 @@ function Aboutme() {
                         </div>
                       </div>
                     </div>
+
+                  
                   </div>
                   <a
                     data-aos="fade-up"
                     data-aos-delay="100"
                     data-aos-duration="1500"
                     className="btn btn_effect home-banner-btn orange-btn mt-50"
-                    href="resume.html"
+                    href="Rajeevchaudhary.pdf"
                   >
                     <span className="position-relative z-1"><a style={{color:"white"}} href="Rajeevchaudhary.pdf" download >Download My CV</a></span>
                   </a>
