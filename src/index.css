@@ -1,0 +1,47 @@
+.social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon i {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .social-icon:hover {
+    background-color: #ff6600; /* or any color you prefer */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+
+  .slick-prev,
+.slick-next {
+  background-color: #000; /* Change to your desired color */
+  color: #e53131; /* Arrow color */
+  font-size: 24px; /* Arrow size */
+}
+
+.slick-prev {
+  left: 10px; /* Adjust left position */
+}
+
+.slick-next {
+  right: 10px; /* Adjust right position */
+}
+
+.slick-arrow::before{
+    color: red !important;
+    /* background-color: #000 !important; */
+}
