@@ -185,7 +185,7 @@ function Resume() {
                                                 <div className="row justify-content-between mt-10">
                                                     <p
                                                         className="p secondary-black fw-400 line-height-7 col-10 skill-name position-relative">
-                                                        Mysql
+                                                        sql
                                                     </p>
                                                     <p className="p col-2 secondary-black fw-400 line-height-7">
                                                         90%
