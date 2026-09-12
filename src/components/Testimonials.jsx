@@ -1,10 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function Testimonials() {
-  // Slider settings
   const settings = {
     dots: true,
     infinite: true,
@@ -12,7 +11,7 @@ function Testimonials() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     arrows: true,
   };
 
@@ -28,74 +27,48 @@ function Testimonials() {
                   <p>Testimonial</p>
                 </div>
                 <h2 className="black-color line-height-3 h2 text-uppercase text-center">
-                  Client Feedback
+                  Client feedback
                 </h2>
               </div>
               <div className="testimonial-list-container row-mobile-margin mt-50">
                 <Slider {...settings}>
-                  {/* Slide 1 */}
                   <div className="item">
                     <div className="testimonial-card">
                       <div className="bio d-flex align-items-center">
-                        <img className="bio-img" src="img/testimonialOne.png" alt="testimonial-image" />
+                        <img className="bio-img" src="img/testimonialOne.png" alt="testimonial" />
                         <div>
                           <h3 className="h3 fw-500 line-height-3 black-color">Piyush</h3>
                           <p className="p fw-400 line-height-7 secondary-black">Founder, Fitspot</p>
                         </div>
                       </div>
                       <p className="p line-height-7 fw-400 secondary-black mt-20">
-
-                      Rajeev Chaudhary is an exceptional developer with a keen eye for detail and a deep understanding of web technologies. They built our website from the ground up using CodeIgniter, PHP, and SQL, and ensured it was responsive and user-friendly with Bootstrap and JavaScript. The entire process was smooth, and Rajeev delivered exactly what we needed, on time and within budget. Highly recommended for any web development project!                      </p>
+                        Rajeev built Fitspot from the ground up and made it production-ready —
+                        responsive, searchable, and easy for gym owners to use. He delivered on
+                        time, stayed sharp on the details, and was straightforward to work with.
+                        Highly recommended if you need someone who actually ships.
+                      </p>
                     </div>
                   </div>
-                  
-                  {/* Slide 2 */ }
+
                   <div className="item">
                     <div className="testimonial-card">
                       <div className="bio d-flex align-items-center">
-                        <img className="bio-img" src="img/testimonialOne.png" alt="testimonial-image" />
+                        <img className="bio-img" src="img/testimonialOne.png" alt="testimonial" />
                         <div>
-                          <h3 className="h3 fw-500 line-height-3 black-color">Rajesh yadav</h3>
-                          <p className="p fw-400 line-height-7 secondary-black">Founder, Web services</p>
+                          <h3 className="h3 fw-500 line-height-3 black-color">Rajesh Yadav</h3>
+                          <p className="p fw-400 line-height-7 secondary-black">
+                            Founder, WebHubpoint
+                          </p>
                         </div>
                       </div>
                       <p className="p line-height-7 fw-400 secondary-black mt-20">
-                     Rajeev Chaudhary is an outstanding developer who played a crucial role in bringing our vision to life at WebServices. Their expertise in CodeIgniter, PHP, and SQL was evident as they crafted a seamless and user-friendly website.Rajeev not only delivered on time but also ensured that every aspect was optimized for performance and SEO. Their proactive communication and problem-solving skills made the entire process enjoyable. I highly recommend Rajeev Chaudhary for any web development project!
+                        Rajeev played a key role across multiple client platforms for us. He owns
+                        the full delivery loop — backend, frontend, performance, and SEO — and
+                        communicates clearly when something needs a decision. Dependable engineer
+                        for production work.
                       </p>
                     </div>
                   </div>
-                  
-                  {/* Slide 3 */}
-                  {/* <div className="item">
-                    <div className="testimonial-card">
-                      <div className="bio d-flex align-items-center">
-                        <img className="bio-img" src="img/testimonialThree.png" alt="testimonial-image" />
-                        <div>
-                          <h3 className="h3 fw-500 line-height-3 black-color">Robert E. Wolf</h3>
-                          <p className="p fw-400 line-height-7 secondary-black">Director, Techso</p>
-                        </div>
-                      </div>
-                      <p className="p line-height-7 fw-400 secondary-black mt-20">
-                        “Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.”
-                      </p>
-                    </div>
-                  </div> */}
-
-                  {/* Slide 4 */}
-                  {/* <div className="item">
-                    <div className="testimonial-card">
-                      <div className="bio d-flex align-items-center">
-                        <img className="bio-img" src="img/testimonialThree.png" alt="testimonial-image" />
-                        <div>
-                          <h3 className="h3 fw-500 line-height-3 black-color">Robert E. Wolf</h3>
-                          <p className="p fw-400 line-height-7 secondary-black">Director, Techso</p>
-                        </div>
-                      </div>
-                      <p className="p line-height-7 fw-400 secondary-black mt-20">
-                        “Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.”
-                      </p>
-                    </div>
-                  </div> */}
                 </Slider>
               </div>
             </div>

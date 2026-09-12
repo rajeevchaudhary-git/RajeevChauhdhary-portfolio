@@ -14,7 +14,7 @@ function Conatctus() {
                     <p>My Contact</p>
                   </div>
                   <h2 className="black-color line-height-3 h2 text-uppercase text-center">
-                    I WANT TO HEAR FROM YOU
+                    Let&apos;s build something solid
                   </h2>
                 </div>
                 <div className="home-contact-info-container row row-mobile-margin mt-50 align-items-start">

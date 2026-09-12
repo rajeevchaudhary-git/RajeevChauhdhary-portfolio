@@ -3,7 +3,7 @@ import React from 'react';
 function Banner() {
   return (
     <>
-      <section className="home-banner position-relative">
+      <section id="home" className="home-banner position-relative">
         <div className="container-fluid custom-container">
           <div className="row">
             <div className="col-12">
@@ -11,25 +11,27 @@ function Banner() {
                 <div className="col-12 col-lg-6 col-xl-7 home-banner-text-col position-relative">
                   <div className="sub-heading d-flex align-items-center">
                     <img src="img/orangeDot.png" alt="orange-dot" />
-                    <p>I AM Full Stack Web Developer</p>
+                    <p>Backend Developer · Real-time Systems</p>
                   </div>
                   <div className="animate-heading">
                     <h1 className="black-color h1 home-one-title ah-headline">
-                      Creative Design and Web
+                      I build systems that stay up under
                       <span className="orange-color">
                         <span className="ah-words-wrapper">
-                          <b className="is-visible"> Solutions</b>
-                          <b>Design</b>
+                          <b className="is-visible"> load</b>
+                          <b>pressure</b>
+                          <b>scale</b>
                         </span>
                       </span>
-                      <br />
                     </h1>
                   </div>
                   <p className="h5 line-height-7 mt-20 secondary-black fw-400">
-                    I’m a Full-Stack Web Developer with expertise in building responsive, scalable web applications using technologies like React, Node.js, Express, PHP, CodeIgniter, MySQL, and MongoDB. I focus on creating seamless user experiences and efficient back-end solutions, integrating third-party APIs, and delivering high-performance, modern web applications.
+                    Backend-focused full stack engineer at Jaatak Astro Infotech (New Delhi).
+                    I ship Socket.IO call/chat infrastructure, WebRTC, Redis-backed systems, and
+                    payment ledgers — currently scaling JaatakAstro to 15K+ MAU with 3K+ concurrent
+                    real-time connections.
                   </p>
 
-                  {/* Social media icons with tooltips */}
                   <div className="social-icons mt-4">
                     <a
                       style={{ fontSize: '40px' }}
@@ -69,13 +71,15 @@ function Banner() {
                     </a>
                   </div>
 
-                  <a className="btn_effect btn home-banner-btn orange-btn mt-50" href="#contact">
-                    <span className="z-1 position-relative">
-                      <a style={{ color: 'white' }} href="Rajeevchaudhary.pdf" download>
-                        Download My CV
-                      </a>
-                    </span>
-                  </a>
+                  <div className="d-flex flex-wrap gap-3 mt-50">
+                    <a className="btn_effect btn home-banner-btn orange-btn" href="#portfolio">
+                      <span className="z-1 position-relative text-white">View Projects</span>
+                    </a>
+                    <a className="btn_effect btn home-banner-btn orange-btn" href="Rajeevchaudhary.pdf" download>
+                      <span className="z-1 position-relative text-white">Download CV</span>
+                    </a>
+                  </div>
+
                   <div className="banner-particle-one-container">
                     <img
                       className="position-absolute banner-particle-one d-none d-lg-inline"
@@ -109,7 +113,7 @@ function Banner() {
                     className="img-fluid position-relative z-index-10 home-banner-img"
                     src="img/Removal-159.png"
                     style={{ borderRadius: '139px' }}
-                    alt="banner-image"
+                    alt="Rajeev Chaudhary"
                   />
                 </div>
               </div>

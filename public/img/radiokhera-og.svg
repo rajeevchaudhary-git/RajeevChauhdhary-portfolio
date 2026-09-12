@@ -1,0 +1,20 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#080711"/>
+  <circle cx="950" cy="120" r="360" fill="#7c3aed" opacity="0.28"/>
+  <circle cx="230" cy="500" r="300" fill="#f97316" opacity="0.35"/>
+  <rect x="84" y="88" width="1032" height="454" rx="48" fill="white" opacity="0.08" stroke="white" stroke-opacity="0.16"/>
+  <text x="130" y="250" fill="white" font-family="Arial, sans-serif" font-size="72" font-weight="900">Khera Radio USA</text>
+  <text x="132" y="326" fill="#fed7aa" font-family="Arial, sans-serif" font-size="34" font-weight="700">Live Radio " Podcasts " Community Broadcasts</text>
+  <text x="132" y="405" fill="white" fill-opacity="0.72" font-family="Arial, sans-serif" font-size="28">Your own Indian radio, broadcasting globally.</text>
+  <circle cx="930" cy="325" r="98" fill="url(#g)"/>
+  <path d="M892 342c0-31 20-55 45-55s45 24 45 55" stroke="white" stroke-width="18" stroke-linecap="round"/>
+  <rect x="881" y="329" width="29" height="58" rx="14.5" fill="white"/>
+  <rect x="965" y="329" width="29" height="58" rx="14.5" fill="white"/>
+  <defs>
+    <linearGradient id="g" x1="832" x2="1028" y1="227" y2="423" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ef4444"/>
+      <stop offset="0.5" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+</svg>

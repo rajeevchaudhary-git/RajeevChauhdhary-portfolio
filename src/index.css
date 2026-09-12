@@ -1,47 +1,91 @@
-.social-icons {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .social-icon {
-    display: inline-block;
-    width: 100px;
-    height: 50px;
-    background-color: #333;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-  }
-  
-  .social-icon i {
-    color: white;
-    font-size: 24px;
-  }
-  
-  .social-icon:hover {
-    background-color: #ff6600; /* or any color you prefer */
-    transform: scale(1.1); /* Slightly enlarge on hover */
-  }
-  
+@import "tailwindcss";
 
-  .slick-prev,
-.slick-next {
-  background-color: #000; /* Change to your desired color */
-  color: #e53131; /* Arrow color */
-  font-size: 24px; /* Arrow size */
+@theme {
+  --color-base: #0a0a0a;
+  --color-base-2: #101114;
+  --color-panel: #141618cc;
+  --color-panel-solid: #16181c;
+  --color-panel-2: #1a1d21;
+  --color-steel: #2e333b;
+  --color-muted: #8b919a;
+  --color-ink: #f2f3f5;
+  --color-copper: #ff8c42;
+  --color-copper-bright: #ffb06b;
+  --color-copper-dim: #c45f1e;
+  --color-amber: #ffc078;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 }
 
-.slick-prev {
-  left: 10px; /* Adjust left position */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-base text-ink font-sans antialiased;
+    background:
+      radial-gradient(ellipse 90% 60% at 50% -10%, rgba(255, 140, 66, 0.08), transparent 50%),
+      linear-gradient(180deg, #0a0a0a 0%, #0e0f12 40%, #0a0a0a 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body.has-custom-cursor,
+  body.has-custom-cursor * {
+    cursor: none !important;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-copper) 45%, transparent);
+    color: var(--color-ink);
+  }
 }
 
-.slick-next {
-  right: 10px; /* Adjust right position */
-}
+@layer utilities {
+  .text-glow-copper {
+    text-shadow:
+      0 0 20px color-mix(in srgb, var(--color-copper) 55%, transparent),
+      0 0 60px color-mix(in srgb, var(--color-copper) 25%, transparent);
+  }
 
-.slick-arrow::before{
-    color: red !important;
-    /* background-color: #000 !important; */
+  .glow-copper {
+    box-shadow:
+      0 0 20px color-mix(in srgb, var(--color-copper) 35%, transparent),
+      0 0 48px color-mix(in srgb, var(--color-copper) 15%, transparent);
+  }
+
+  .glass-panel {
+    background: linear-gradient(
+      145deg,
+      rgba(255, 140, 66, 0.06) 0%,
+      rgba(20, 22, 26, 0.72) 40%,
+      rgba(16, 17, 20, 0.85) 100%
+    );
+    backdrop-filter: blur(16px) saturate(1.2);
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+    border: 1px solid rgba(255, 140, 66, 0.18);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 176, 107, 0.12),
+      0 0 0 1px rgba(0, 0, 0, 0.35),
+      0 20px 50px rgba(0, 0, 0, 0.35),
+      0 0 40px rgba(255, 140, 66, 0.06);
+  }
+
+  .blueprint-grid {
+    background-image:
+      linear-gradient(rgba(255, 140, 66, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 140, 66, 0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .mech-press:active {
+    transform: translateY(2px);
+  }
 }

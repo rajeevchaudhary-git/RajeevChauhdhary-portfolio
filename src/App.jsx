@@ -1,40 +1,47 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You must import the AOS CSS file
-import Banner from './components/Banner'
-import Aboutme from './components/Aboutme'
-import Services from './components/Services'
-import Resume from './components/Resume'
-import Testimonials from './components/Testimonials'
-import Portfolio from './components/Portfolio'
-import Patners from './components/Patners'
-import Blogs from './components/Blogs'
-import Conatctus from './components/Conatctus'
+import { useCallback, useState } from 'react'
+import './index.css'
+import { SoundProvider } from './context/SoundContext'
+import { PointerProvider } from './context/PointerContext'
+import BootSequence from './components/BootSequence'
+import CustomCursor from './components/CustomCursor'
+import MachineSpine from './components/MachineSpine'
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import About from './components/About'
+import TechStack from './components/TechStack'
+import Projects from './components/Projects'
+import Experience from './components/Experience'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true,     // Whether animation should happen only once
-    });
-  }, []);
+  const [booted, setBooted] = useState(false)
+  const onBootComplete = useCallback(() => setBooted(true), [])
 
   return (
-   <>
-    {/* <Header/> */}
-    <Banner/>
-    <Aboutme/>
-    <Services/>
-    <Resume/>
-    <Portfolio/>
-    <Testimonials/>
-    {/* <Patners/> */}
-    {/* <Blogs/> */}
-    <Conatctus/>
-    <Footer/>
-
-   </>
+    <SoundProvider>
+      <PointerProvider>
+        <BootSequence onComplete={onBootComplete} />
+        <CustomCursor />
+        <MachineSpine />
+        <a
+          href="#home"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[110] focus:bg-copper focus:px-3 focus:py-2 focus:text-base"
+        >
+          Skip to content
+        </a>
+        <Nav />
+        <main>
+          <Hero booted={booted} />
+          <About />
+          <TechStack />
+          <Projects />
+          <Experience />
+          <Contact />
+        </main>
+        <Footer />
+      </PointerProvider>
+    </SoundProvider>
   )
 }
 

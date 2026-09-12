@@ -45,13 +45,39 @@ function Portfolio() {
                     <p>My Portfolio</p>
                   </div>
                   <h2 className="black-color line-height-3 h2 text-uppercase text-center">
-                    VISIT MY RECENET PROJECTS
+                    VISIT MY RECENT PROJECTS
                   </h2>
                 </div>
                 <div className="mt-50 row-mobile-margin">
                   {/* Portfolio Slider */}
                   <Slider {...settings}>
-                    {/* Slide 1 */}
+                    {/* Radio Khera — new */}
+                    <div className="portfolio-massonary-items mix ui all position-relative ml-2">
+                      <img
+                        className="img-fluid"
+                        src="img/radiokhera-full.png"
+                        alt="Radio Khera"
+                        style={{ margin: "10px" }}
+                      />
+                      <div className="portfolio-card-overlay w-100 position-absolute top-0"></div>
+                      <div className="d-flex w-100 position-absolute bottom-0 left-0 justify-content-center align-items-center">
+                        <div className="position-absolute mx-auto portfolio-card-overlay-contents">
+                          <p className="text-white fw-400 line-height-7">
+                            Live internet radio
+                          </p>
+                          <a
+                            href="#portfolioRadio"
+                            className="h4 text-white fw-600 line-height-3"
+                            data-bs-toggle="modal"
+                            data-bs-target="#portfolioModalRadio"
+                          >
+                            Radio Khera (LiveKit, Icecast, Redis)
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Existing projects */}
                     <div className="portfolio-massonary-items mix ui all position-relative ml-2">
                       <img
                         className="img-fluid"
@@ -213,6 +239,71 @@ function Portfolio() {
 
                     {/* Add more slides as needed */}
                   </Slider>
+
+{/* Modal: Radio Khera */}
+<div className="modal fade" id="portfolioModalRadio" aria-hidden="true">
+  <div className="modal-dialog modal-dialog-centered modal-lg">
+    <button
+      type="button"
+      className="btn-close mb-10"
+      data-bs-dismiss="modal"
+      aria-label="Close"
+    ></button>
+    <div className="border-0 rounded bg-white p-5">
+      <div className="single-blog-details">
+        <div className="single-blog-featured-img-container row-mobile-margin mt-50">
+          <img
+            className="single-blog-featured-img img-fluid"
+            src="img/radiokhera-full.png"
+            alt="Radio Khera — globalkhera.com"
+          />
+        </div>
+        <div className="single-blog-meta-container mt-50 row-mobile-margin d-flex align-items-center">
+          <div className="single-blog-meta-item d-flex align-items-center mr-35">
+            <i className="fa-regular fa-user me-2 h6 orange-color"></i>
+            <p className="p secondary-black fw-400 line-height-7 single-blog-meta-author">
+              Rajeev Chaudhary
+            </p>
+          </div>
+          <div className="single-blog-meta-item d-flex align-items-center mr-35">
+            <i className="fa-regular fa-calendar me-2 h6 orange-color"></i>
+            <p className="p secondary-black fw-400 line-height-7 single-blog-meta-author">
+              Production · globalkhera.com
+            </p>
+          </div>
+        </div>
+        <div className="single-page-blog-title mt-20">
+          <h2 className="h2 black-color fw-700 line-height-">
+            Radio Khera — Live Internet Radio Streaming Platform
+          </h2>
+        </div>
+        <div className="single-page-blog-content-body">
+          <p className="p secondary-black fw-400 line-height-7 mt-50">
+            <strong>Problem:</strong> Community radio needed a real broadcast pipeline — not
+            just a playlist page — with live now-playing and a mobile listener app.
+          </p>
+          <p className="p secondary-black fw-400 line-height-7 mt-20">
+            <strong>Solution:</strong> Built end-to-end (frontend + backend + infra): LiveKit
+            Egress → Nginx RTMP → Liquidsoap → Icecast. Real-time now-playing via SSE,
+            Redis-backed queue, React Native Android app, and CI/CD with GitHub Actions + PM2.
+          </p>
+          <p className="p secondary-black fw-400 line-height-7 mt-20">
+            <strong>Stack:</strong> LiveKit · Nginx RTMP · Liquidsoap · Icecast · SSE · Redis ·
+            React Native · GitHub Actions · PM2
+          </p>
+          <a
+            href="https://globalkhera.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn orange-btn btn_effect mt-30"
+          >
+            <span className="position-relative z-1 text-white">Visit globalkhera.com</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
                   {/* Modal for portfolio items  1 */}
 <div className="modal fade" id="portfolioModalOne" aria-hidden="true">
