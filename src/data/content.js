@@ -5,7 +5,7 @@ export const profile = {
   email: 'rajeevchoudhary067@gmail.com',
   phone: '+91 93549 87017',
   phoneHref: 'tel:+919354987017',
-  cv: '/Rajeevchaudhary.pdf',
+  cv: '/Rajeev_chaudhary.pdf',
   socials: [
     { label: 'GitHub', href: 'https://github.com/rajeevchaudhary-git/' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/rajeev-chaudhary-dev' },
